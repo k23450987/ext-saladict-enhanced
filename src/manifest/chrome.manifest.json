@@ -11,5 +11,6 @@
   "content_security_policy": "script-src 'self' chrome-extension://hfjbmagddngcpeloejdejnfgbamkjaeg/ chrome-extension://aibcglbfblnogfjhbcmmpobjhnomhcdo/; object-src 'self'",
   "incognito": "split",
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "minimum_chrome_version": "63"
+  "minimum_chrome_version": "63",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh0WPP98qxm2xpCg6FXRHJP/zYS1lvhBsYXYaajdF8lE79mEtO78iPjk26MQ96+L/6cXqKvCaVUP3WcC5h+AEkKcaPCTeRopQkwhcN6fRiJg6hqW/srMDcJB7onruC8FN0tHzhNinJq+oWQxspMUGPw5d0sS0EDaVyLubUsi8RlfD2zyp/+gGCjwOMqi4dVZj6Op2EkZqNjh0caIFP79DkBZj5TsjqFVUgVtJyWWST+SRPGOu+bCguLoNjsLCJbfGct04M+ACehL90gZ6vsHl4wuvRnaq6WtsMelwSoAr6TXLYq9BbJrUsZFqBWrcC74rtb7h+w7VNFVpPzYeXWGB6wIDAQAB"
 }
