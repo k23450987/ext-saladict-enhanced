@@ -36,6 +36,7 @@ import wikipedia from '@/components/dictionaries/wikipedia/config'
 import youdao from '@/components/dictionaries/youdao/config'
 import youdaotrans from '@/components/dictionaries/youdaotrans/config'
 import zdic from '@/components/dictionaries/zdic/config'
+import deeplx from '@/components/dictionaries/deeplx/config'
 
 // For TypeScript to generate typings
 // Follow alphabetical order for easy reading
@@ -75,7 +76,8 @@ export const defaultAllDicts = {
   wikipedia: wikipedia(),
   youdao: youdao(),
   youdaotrans: youdaotrans(),
-  zdic: zdic()
+  zdic: zdic(),
+  deeplx: deeplx(),
 }
 
 export type AllDicts = typeof defaultAllDicts
