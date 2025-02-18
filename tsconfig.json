@@ -23,7 +23,8 @@
       "@/*": ["src/*"]
     },
     "typeRoots": ["node_modules/@types", "src/typings"],
-    "lib": ["esnext", "dom", "dom.iterable"]
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "sourceMap": true
   },
   "include": ["src", "test", ".storybook"]
 }
