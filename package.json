@@ -1,6 +1,6 @@
 {
   "name": "saladict-enhanced",
-  "version": "7.21.2025.0218",
+  "version": "7.21.2025.0219",
   "description": "Chrome extension and Firefox WebExtension; inline translator powered by multiple online dictionaries",
   "private": true,
   "scripts": {
