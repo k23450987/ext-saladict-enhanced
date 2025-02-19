@@ -211,11 +211,11 @@ export class Gemini extends Translator<GeminiConfig> {
 
     const { data } = res;
 
-    const transParagraphs = data?.candidates?.[0]?.content?.parts
+    const resultText = data?.candidates?.[0]?.content?.parts
       ?.map(part => part?.text || '')
       .filter(Boolean)
       .join('') || '';
-
+    const transParagraphs = resultText.split("\n\n");
     const detectedFrom = Gemini.langMapReverse.get(from) as Language;
 
     return {
@@ -227,8 +227,8 @@ export class Gemini extends Translator<GeminiConfig> {
         tts: await this.textToSpeech(text, detectedFrom)
       },
       trans: {
-        paragraphs: [transParagraphs],
-        tts: await this.textToSpeech(transParagraphs, to)
+        paragraphs: transParagraphs,
+        tts: await this.textToSpeech(resultText, to)
       }
     };
   }

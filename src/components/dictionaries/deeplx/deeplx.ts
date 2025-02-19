@@ -82,7 +82,7 @@ export class DeepLX extends Translator<DeepLXConfig> {
 
     const { data } = res;
 
-    const transParagraphs = data.data;
+    const transParagraphs = data.data.split("\n\n");
     const detectedFrom = DeepLX.langMapReverse.get(data.source_lang) as Language;
 
     return {
@@ -94,8 +94,8 @@ export class DeepLX extends Translator<DeepLXConfig> {
         tts: await this.textToSpeech(text, detectedFrom)
       },
       trans: {
-        paragraphs: [transParagraphs],
-        tts: await this.textToSpeech(transParagraphs, to)
+        paragraphs: transParagraphs,
+        tts: await this.textToSpeech(data.data, to)
       }
     };
   }
